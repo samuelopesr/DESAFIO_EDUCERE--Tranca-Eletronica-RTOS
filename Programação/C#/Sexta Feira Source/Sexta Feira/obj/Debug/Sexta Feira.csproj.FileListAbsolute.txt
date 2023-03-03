@@ -1,0 +1,25 @@
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\bin\Debug\Sexta Feira.exe.config
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\bin\Debug\Sexta Feira.exe
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\bin\Debug\Sexta Feira.pdb
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\bin\Debug\Microsoft.Speech.dll
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\obj\Debug\Sexta Feira.csprojAssemblyReference.cache
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\obj\Debug\Sexta_Feira.Form1.resources
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\obj\Debug\Sexta_Feira.Properties.Resources.resources
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\obj\Debug\Sexta Feira.csproj.GenerateResource.cache
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\obj\Debug\Sexta Feira.csproj.CoreCompileInputs.cache
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\obj\Debug\Sexta Feira.csproj.CopyComplete
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\obj\Debug\Sexta Feira.exe
+C:\Users\SCP\source\repos\Sexta Feira\Sexta Feira\obj\Debug\Sexta Feira.pdb
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.exe.config
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.exe
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.pdb
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\bin\Debug\Microsoft.Speech.dll
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.csprojAssemblyReference.cache
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta_Feira.Form1.resources
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta_Feira.Properties.Resources.resources
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.csproj.GenerateResource.cache
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.csproj.CoreCompileInputs.cache
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.csproj.CopyComplete
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.exe
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.pdb
+C:\Users\SCP\Desktop\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta_Feira.ListForm.resources
