@@ -1,0 +1,24 @@
+#include <Stepper.h>
+
+int butao;
+const int pas = 2050;
+
+Stepper passin(pas, 13, 12, 14, 27);
+
+void setup(){
+  passin.setSpeed(1);
+}
+
+void loop()
+{
+  butao = digitalRead(5);
+  if(butao < 650){
+    passin.step(180);
+  }
+  else{
+    passin.step(0);
+   
+  }
+
+
+}
