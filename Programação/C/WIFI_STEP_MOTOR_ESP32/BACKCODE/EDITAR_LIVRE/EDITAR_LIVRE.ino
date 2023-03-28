@@ -88,8 +88,9 @@ void handlemenu()
   {
     html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: Helvetica, sans-serif, Arial;}";
     html += "::-webkit-scrollbar{width: 0px; height: 0px;}";
-    html += "body, html{background: rgba(22, 44, 68, 0.555); height: 100vh; width: 100vw;}";
-    html += "";
+    html += "body, html{background: rgba(22, 44, 68, 0.555); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 100vh; width: 100vw;}";
+    html += "h1{font-size: 1.4em; text-align: center; display: flex; flex-direction: row; }";
+    html += "button{display: flex; flex-direction: row; justify-content: center; align-items: center; height: 200px; width: 200px; border: none; border-radius: 50%; background-color: rgb(40, 128, 251); font-size: 1.1em; text-align: center;}</style>";
     html += "<body><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
     html += "<button name='button' value='1'>Liga LED</button>";
@@ -98,6 +99,11 @@ void handlemenu()
   }
   else if(BValor)
   {
+    html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: Helvetica, sans-serif, Arial;}";
+    html += "::-webkit-scrollbar{width: 0px; height: 0px;}";
+    html += "body, html{background: rgba(22, 44, 68, 0.555); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 100vh; width: 100vw;}";
+    html += "h1{font-size: 1.4em; text-align: center; display: flex; flex-direction: row; }";
+    html += "button{display: flex; flex-direction: row; justify-content: center; align-items: center; height: 200px; width: 200px; border: none; border-radius: 50%; background-color: rgb(40, 128, 251); font-size: 1.1em; text-align: center;}</style>";
     html += "<body><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
     html += "<button name='button' value='0'>Desliga LED</button>";
