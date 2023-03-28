@@ -1,3 +1,6 @@
+
+
+
 //libs
 #include <WiFi.h>
 #include <WebServer.h>
@@ -25,6 +28,8 @@ Stepper MOTOR(Pos,motor_pin_1,motor_pin_2,motor_pin_3,motor_pin_4);
 //ssid de rede e senha
 const char* ssid="GOC";
 const char* senha="terezinha";
+
+                      
 
 //bool trás frente
 bool BValor=0x00;
@@ -81,6 +86,10 @@ void handlemenu()
   html = "<html><head><title>ESP32 Online!!</title></head>";
   if(!BValor)
   {
+    html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: Helvetica, sans-serif, Arial;}";
+    html += "::-webkit-scrollbar{width: 0px; height: 0px;}";
+    html += "body, html{background: rgba(22, 44, 68, 0.555); height: 100vh; width: 100vw;}";
+    html += "";
     html += "<body><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
     html += "<button name='button' value='1'>Liga LED</button>";
