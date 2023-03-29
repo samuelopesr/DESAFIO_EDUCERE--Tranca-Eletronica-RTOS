@@ -26,8 +26,8 @@ String html;
 Stepper MOTOR(Pos,motor_pin_1,motor_pin_2,motor_pin_3,motor_pin_4);
 
 //ssid de rede e senha
-const char* ssid="GOC";
-const char* senha="terezinha";
+const char* ssid="P&D_EDUCERE";
+const char* senha="FUNDACAO2991";
 
                       
 
@@ -87,10 +87,9 @@ void handlemenu()
   if(!BValor)
   {
     html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: Helvetica, sans-serif, Arial;}";
-    html += "::-webkit-scrollbar{width: 0px; height: 0px;}";
     html += "body, html{background: rgba(22, 44, 68, 0.555); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 100vh; width: 100vw;}";
     html += "h1{font-size: 1.4em; text-align: center; display: flex; flex-direction: row; }";
-    html += "button{display: flex; flex-direction: row; justify-content: center; align-items: center; height: 200px; width: 200px; border: none; border-radius: 50%; background-color: rgb(40, 128, 251); font-size: 1.1em; text-align: center;}</style>";
+    html += "button{display: flex; flex-direction: row; justify-content: center; align-items: center; height: 80vh; width: 80vw; border: none; border-radius: 50%; background-color: rgb(40, 128, 251); font-size: 1.1em; text-align: center;}</style>";
     html += "<body><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
     html += "<button name='button' value='1'>Liga LED</button>";
@@ -100,10 +99,9 @@ void handlemenu()
   else if(BValor)
   {
     html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: Helvetica, sans-serif, Arial;}";
-    html += "::-webkit-scrollbar{width: 0px; height: 0px;}";
     html += "body, html{background: rgba(22, 44, 68, 0.555); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 100vh; width: 100vw;}";
     html += "h1{font-size: 1.4em; text-align: center; display: flex; flex-direction: row; }";
-    html += "button{display: flex; flex-direction: row; justify-content: center; align-items: center; height: 200px; width: 200px; border: none; border-radius: 50%; background-color: rgb(40, 128, 251); font-size: 1.1em; text-align: center;}</style>";
+    html += "button{display: flex; flex-direction: row; justify-content: center; align-items: center; height: 80vh; width: 80vw; border: none; border-radius: 50%; background-color: rgb(40, 128, 251); font-size: 1.1em; text-align: center;}</style>";
     html += "<body><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
     html += "<button name='button' value='0'>Desliga LED</button>";
