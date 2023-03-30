@@ -1,6 +1,4 @@
 
-
-
 //libs
 #include <WiFi.h>
 #include <WebServer.h>
@@ -86,27 +84,25 @@ void handlemenu()
   html = "<html><head><title>ESP32 Online!!</title></head>";
   if(!BValor)
   {
-    html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: Helvetica, sans-serif, Arial;}";
-    html += "::-webkit-scrollbar{width: 0px; height: 0px;}";
-    html += "body, html{background: rgba(22, 44, 68, 0.555); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 100vh; width: 100vw;}";
-    html += "h1{font-size: 1.4em; text-align: center; display: flex; flex-direction: row; }";
-    html += "button{display: flex; flex-direction: row; justify-content: center; align-items: center; height: 200px; width: 200px; border: none; border-radius: 50%; background-color: rgb(40, 128, 251); font-size: 1.1em; text-align: center;}</style>";
+    html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box;  font-family: Arial, Helvetica, sans-serif;}";
+    html += "body, htmlbackground: linear-gradient(45deg, rgb(4, 23, 39), rgb(37, 51, 112)); height: 100vh; width: 100vw;}";
+    html += "h1{color: white; position: absolute; width: 270px; margin-top: 45%; margin-left: 22%;}";
+    html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 300px; width: 300px; border-radius: 50%; border: none;}</style>";
     html += "<body><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
-    html += "<button name='button' value='1'>Liga LED</button>";
+    html += "<button name='button' value='1'>Ligar Motor</button>";
     html += "</form></body></html>";
     Serial.println(BValor);
   }
   else if(BValor)
   {
-    html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: Helvetica, sans-serif, Arial;}";
-    html += "::-webkit-scrollbar{width: 0px; height: 0px;}";
-    html += "body, html{background: rgba(22, 44, 68, 0.555); background-position: center center; background-repeat: no-repeat; background-size: cover; height: 100vh; width: 100vw;}";
-    html += "h1{font-size: 1.4em; text-align: center; display: flex; flex-direction: row; }";
-    html += "button{display: flex; flex-direction: row; justify-content: center; align-items: center; height: 200px; width: 200px; border: none; border-radius: 50%; background-color: rgb(40, 128, 251); font-size: 1.1em; text-align: center;}</style>";
+    html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box;  font-family: Arial, Helvetica, sans-serif;}";
+    html += "body, htmlbackground: linear-gradient(45deg, rgb(4, 23, 39), rgb(37, 51, 112)); height: 100vh; width: 100vw;}";
+    html += "h1{color: white; position: absolute; width: 270px; margin-top: 45%; margin-left: 22%;}";
+    html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 300px; width: 300px; border-radius: 50%; border: none;}</style>";
     html += "<body><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
-    html += "<button name='button' value='0'>Desliga LED</button>";
+    html += "<button name='button' value='0'>Desligar Motor</button>";
     html += "</form></body></html>";
     Serial.println(BValor);
   }
