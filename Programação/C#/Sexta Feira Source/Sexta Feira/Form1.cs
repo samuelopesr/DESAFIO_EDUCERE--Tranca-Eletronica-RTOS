@@ -20,7 +20,7 @@ namespace Sexta_Feira
         {
             InitializeComponent();
         }
-        private SpeechRecognitionEngine MATRIX;
+        private SpeechRecognitionEngine reconhecimento;
 
 
 
@@ -34,28 +34,29 @@ namespace Sexta_Feira
         {
             try
             {
-                MATRIX = new SpeechRecognitionEngine();
-                MATRIX.SetInputToDefaultAudioDevice();
-                MATRIX.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(GFUN);
-                MATRIX.AudioLevelUpdated += new EventHandler<AudioLevelUpdatedEventArgs>(CALL);
+                reconhecimento = new SpeechRecognitionEngine();
+                reconhecimento.SetInputToDefaultAudioDevice();
+                reconhecimento.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(RFala);
+                reconhecimento.AudioLevelUpdated += new EventHandler<AudioLevelUpdatedEventArgs>(CALL);
 
                 Choices alternateChoices = new Choices();
-                //alternateChoices.Add(); add func
-                
+
+
+                alternateChoices.Add(Fala.abre_portao.ToArray()); 
+                alternateChoices.Add(Fala.fecha_portao.ToArray()); 
 
 
 
 
+                //builder classes gramaticais
                 GrammarBuilder builder = new GrammarBuilder();
                 builder.Append(alternateChoices);
 
-                MATRIX.LoadGrammar(new Grammar(builder){ Name = "sys" });
+                reconhecimento.LoadGrammar(new Grammar(builder){ Name = "sys" });
+                reconhecimento.RecognizeAsync(RecognizeMode.Multiple);
 
-                MATRIX.RecognizeAsync(RecognizeMode.Multiple);
+
                 Speech.FL("O reconhecimento de voz foi iniciado");
-
-
-
 
             }
             catch (Exception ERROR)
@@ -65,12 +66,10 @@ namespace Sexta_Feira
 
 
         }
-        private void GFUN(object s, SpeechRecognizedEventArgs e)
+        private void RFala(object s, SpeechRecognizedEventArgs e)
         {
-            string test = @"c:/";
-           
-            string scp = e.Result.Text;
-            MessageBox.Show(scp);
+            string mensagem = e.Result.Text;
+            MessageBox.Show(mensagem);
             if ((double)e.Result.Confidence <= 0.349999994039536)
                 return;
             switch (e.Result.Grammar.Name)
@@ -78,9 +77,13 @@ namespace Sexta_Feira
                 case "sys":
                     try
                     {
-                        if (/*classe de fala*/.Any<string>(x => x == scp).Equals(false))
+                        if (Fala.abre_portao.Any<string>(x => x == mensagem).Equals(true))
                         {
-                             //task a fazer
+                            Process.Start("");
+                        }
+                        else if (Fala.fecha_portao.Any<string>(x => x == mensagem).Equals(true))
+                        {
+                            Process.Start("");
                         }
                     }
                     catch (Exception ex)
