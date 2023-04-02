@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Speech.Recognition;
@@ -68,8 +62,8 @@ namespace Sexta_Feira
         }
         private void RFala(object s, SpeechRecognizedEventArgs e)
         {
+
             string mensagem = e.Result.Text;
-            MessageBox.Show(mensagem);
             if ((double)e.Result.Confidence <= 0.349999994039536)
                 return;
             switch (e.Result.Grammar.Name)
@@ -79,12 +73,15 @@ namespace Sexta_Feira
                     {
                         if (Fala.abre_portao.Any<string>(x => x == mensagem).Equals(true))
                         {
-                            Process.Start("");
+                            webBrowser1.Navigate("http://192.168.0.184/Chave?button=1");
+                            webBrowser1.Refresh();         
                         }
                         else if (Fala.fecha_portao.Any<string>(x => x == mensagem).Equals(true))
                         {
-                            Process.Start("");
+                            webBrowser1.Navigate("http://192.168.0.184/Chave?button=0");
+                            webBrowser1.Refresh();
                         }
+                        
                     }
                     catch (Exception ex)
                     {
@@ -108,6 +105,11 @@ namespace Sexta_Feira
         {
             ListForm F2 = new ListForm();
             F2.Show();
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
 
         }
     }

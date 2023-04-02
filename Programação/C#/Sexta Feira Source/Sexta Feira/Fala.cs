@@ -10,7 +10,7 @@ namespace Sexta_Feira
     {
         public static List<string> abre_portao = new List<string>()
         {
-             "Abra o portão", "Abrir o portão"
+             "Abra o portão", "Abrir o portão","Abre o portão"
         };
         public static List<string> fecha_portao = new List<string>()
         {

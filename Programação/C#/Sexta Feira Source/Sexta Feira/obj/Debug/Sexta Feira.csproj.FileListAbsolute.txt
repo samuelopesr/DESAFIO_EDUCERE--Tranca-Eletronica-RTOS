@@ -35,3 +35,15 @@ C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS\Programaç
 C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS\Programação\C#\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.exe.config
 C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS\Programação\C#\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.exe
 C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS\Programação\C#\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.pdb
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.exe.config
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.exe
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\bin\Debug\Sexta Feira.pdb
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.csproj.AssemblyReference.cache
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.csproj.SuggestedBindingRedirects.cache
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta_Feira.Form1.resources
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta_Feira.ListForm.resources
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta_Feira.Properties.Resources.resources
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.csproj.GenerateResource.cache
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.csproj.CoreCompileInputs.cache
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.exe
+C:\Users\staus\Desktop\GITHUB\DESAFIO_EDUCERE--Tranca-Eletronica-RTOS-1\Programação\C#\Sexta Feira Source\Sexta Feira\obj\Debug\Sexta Feira.pdb
