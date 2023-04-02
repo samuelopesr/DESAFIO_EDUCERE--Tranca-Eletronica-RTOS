@@ -17,8 +17,6 @@ const int Pos = 100;
 //Servidor configuração
 WebServer Servidor(80);
 
-IPAddress staticIP(192, 168, 0, 200);
-
 //string HTML
 String html;
 
