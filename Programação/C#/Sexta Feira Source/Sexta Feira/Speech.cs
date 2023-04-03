@@ -19,8 +19,6 @@ namespace Sexta_Feira
             if (READ.State == SynthesizerState.Speaking)
                 READ.SpeakAsyncCancelAll();
                 READ.SpeakAsync(text);
-                
-            
         }
 
 

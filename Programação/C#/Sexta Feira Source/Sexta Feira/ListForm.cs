@@ -47,7 +47,7 @@ namespace Sexta_Feira
 
         private void ListForm_Load(object sender, EventArgs e)
         {
-            groupBox7.Text = "\"" + Environment.UserName + " --- " + Dns.GetHostEntry(Environment.MachineName).HostName + " --- " + Environment.OSVersion + "\"";
+            groupBox7.Text = Environment.UserName + " --- " + Dns.GetHostEntry(Environment.MachineName).HostName + " --- " + Environment.OSVersion;
 
         }
 
