@@ -2,7 +2,6 @@ TaskHandle_t Wifi;
 TaskHandle_t Motor;
 TaskHandle_t LogicaMotor;
 TaskHandle_t VarWifiWebServer;
-TaskHandle_t VoidWifi;
 TaskHandle_t VoidWifi_HandleMenu;
 TaskHandle_t VoidWifi_HandleHome; 
 
@@ -44,15 +43,6 @@ void setup() {
                     NULL,
                     &VarWifiWebServer,
                     1)
-
-                    
- xTaskCreatePinnedToCore(
-                    voidwifi,
-                    "tarefa5",  
-                    10000,
-                    NULL,
-                    &VoidWifi,
-                    0)
 
 xTaskCreatePinnedToCore(
                     voidwifihandlemenu,
