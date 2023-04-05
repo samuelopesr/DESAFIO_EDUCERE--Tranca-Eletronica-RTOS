@@ -1,5 +1,10 @@
 TaskHandle_t Wifi;
 TaskHandle_t Motor;
+TaskHandle_t LogicaMotor;
+TaskHandle_t VarWifiWebServer;
+TaskHandle_t VoidWifi;
+TaskHandle_t VoidWifi_HandleMenu;
+TaskHandle_t VoidWifi_HandleHome; 
 
 
 
@@ -15,15 +20,54 @@ void setup() {
                     0);          /* fixar tarefa no núcleo 1 */
                       
   xTaskCreatePinnedToCore(
-                    motor,   /* função de tarefa. */
-                    "tarefa2",     /* nome da tarefa. */
-                    10000,       /* Tamanho da pilha da tarefa */
-                    NULL,        /* parâmetro da tarefa */
-                    1,           /* prioridade da tarefa */
-                    &Motor,      /* Alça de tarefa para acompanhar a tarefa criada */
-                    1);          /* fixar tarefa no núcleo 1 */           
-}
+                    motor,   
+                    "tarefa2",     
+                    10000,    
+                    NULL,       
+                    1,          
+                    &Motor,      
+                    1);          
 
+ xTaskCreatePinnedToCore(
+                    logicaMotor,
+                    "tarefa3",
+                    10000,
+                    NULL,
+                    1,
+                    &LogicaMotor,
+                    1)
+}
+ xTaskCreatePinnedToCore(
+                    varwifiwebserver,
+                    "tarefa4",
+                    10000,
+                    NULL,
+                    &VarWifiWebServer,
+                    1)
+
+                    
+ xTaskCreatePinnedToCore(
+                    voidwifi,
+                    "tarefa5",  
+                    10000,
+                    NULL,
+                    &VoidWifi,
+                    1)
+
+xTaskCreatePinnedToCore(
+                    voidwifihandlemenu,
+                    "tarefa6",
+                    10000,
+                    &VoidWifiHandleMenu,
+                    1)   
+
+                                    
+xTaskCreatePinnedToCore(
+                    voidwifihandlehome,
+                    "tarefa7",
+                    10000,
+                    &VoidWifi_HandleHome,
+                    1)                                   
 void loop() {
   // put your main code here, to run repeatedly:
 
