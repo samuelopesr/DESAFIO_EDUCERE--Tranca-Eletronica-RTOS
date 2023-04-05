@@ -1,9 +1,7 @@
-void setup() {
-  // put your setup code here, to run once:
+void voidwifihandlehome(void * pvParameters ) 
+{
+  String html = "<html><head><title>ESP32 Online!!</title></head><body><a href='./Chave'>MENU</a></body></html>";
 
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-
+  //manda informação para o servidor web
+  Servidor.send(200, "text/html", html);
 }
