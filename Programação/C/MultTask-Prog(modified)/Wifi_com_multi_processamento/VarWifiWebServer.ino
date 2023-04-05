@@ -1,9 +1,23 @@
-void setup() {
-  // put your setup code here, to run once:
+void varwifiwebserver (void * pvParameters)
+{
+  #include <WiFi.h>
+  #include <WebServer.h>
+  
 
-}
+  //Servidor configuração
+    WebServer Servidor(80);
 
-void loop() {
-  // put your main code here, to run repeatedly:
+  //ssid de rede e senha
+    const char* ssid = "";
+    const char* senha = "";
 
+  //pinos de conexao
+    #define conexao_0 27
+  //#define conexao_1 26
+
+  //bool trás frente
+    bool BValor;
+
+  //string HTML
+    String html;  
 }

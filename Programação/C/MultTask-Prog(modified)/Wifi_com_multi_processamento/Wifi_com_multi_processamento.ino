@@ -29,13 +29,13 @@ void setup() {
                     1);          
 
  xTaskCreatePinnedToCore(
-                    logicaMotor,
+                    logicamotor,
                     "tarefa3",
                     10000,
                     NULL,
                     1,
                     &LogicaMotor,
-                    1)
+                    0)
 }
  xTaskCreatePinnedToCore(
                     varwifiwebserver,
@@ -52,7 +52,7 @@ void setup() {
                     10000,
                     NULL,
                     &VoidWifi,
-                    1)
+                    0)
 
 xTaskCreatePinnedToCore(
                     voidwifihandlemenu,
@@ -67,7 +67,7 @@ xTaskCreatePinnedToCore(
                     "tarefa7",
                     10000,
                     &VoidWifi_HandleHome,
-                    1)                                   
+                    0)                                   
 void loop() {
   // put your main code here, to run repeatedly:
 
