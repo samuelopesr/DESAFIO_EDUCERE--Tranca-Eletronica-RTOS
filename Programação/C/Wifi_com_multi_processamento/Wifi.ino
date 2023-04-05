@@ -6,8 +6,8 @@
 WebServer Servidor(80);
 
 //ssid de rede e senha
-const char* ssid = "";
-const char* senha = "";
+const char* ssid = "P&D_EDUCERE";
+const char* senha = "FUNDACAO2991";
 
 //pinos de conexao
 #define conexao_0 27
@@ -37,6 +37,7 @@ void wifi(void* pvParameters)
   WiFi.begin(ssid, senha);
 
   //set ip fixo
+  /*
   IPAddress local_IP(192, 168, 0, 184);
   IPAddress gateway(192, 168, 0, 1);
   IPAddress subnet(255, 255, 25, 0);
@@ -50,6 +51,7 @@ void wifi(void* pvParameters)
   {
     Serial.println("STA FALHOU");
   }
+  */
 
   //check conexao
   while (WiFi.status() != WL_CONNECTED) 
@@ -77,6 +79,7 @@ void wifi(void* pvParameters)
 
   while (1) 
   {
+    delay(1);
     Servidor.handleClient();
     if (!BValor) 
     {
@@ -105,7 +108,7 @@ void handlemenu() {
     html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 300px; width: 300px; border-radius: 50%; border: none;}</style>";
     html += "<body><center><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
-    html += "<button name='button' value='1'>Ligar Motor</button>";
+    html += "<button name='button' value='1'>Abrir Portão</button>";
     html += "</form></center></body></html>";
   } 
   else if (BValor) 
@@ -116,7 +119,7 @@ void handlemenu() {
     html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 300px; width: 300px; border-radius: 50%; border: none;}</style>";
     html += "<body><center><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
-    html += "<button name='button' value='0'>Desligar Motor</button>";
+    html += "<button name='button' value='0'>Fechar Portão</button>";
     html += "</form></center></body></html>";
   }
 
