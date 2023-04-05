@@ -4,7 +4,7 @@ TaskHandle_t Motor;
 
 
 void setup() {
-  //create a task that will be executed in the Task2code() function, with priority 1 and executed on core 1
+  
   xTaskCreatePinnedToCore(
                     wifi,   /* função de tarefa. */
                     "tarefa1",     /* nome da tarefa. */
