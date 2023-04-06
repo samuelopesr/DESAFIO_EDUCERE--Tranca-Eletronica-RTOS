@@ -41,6 +41,7 @@ void setup() {
                     "tarefa4",
                     10000,
                     NULL,
+                    1,
                     &VarWifiWebServer,
                     1)
 
@@ -48,6 +49,8 @@ xTaskCreatePinnedToCore(
                     voidwifihandlemenu,
                     "tarefa6",
                     10000,
+                    NULL,
+                    1,
                     &VoidWifiHandleMenu,
                     1)   
 
@@ -56,6 +59,8 @@ xTaskCreatePinnedToCore(
                     voidwifihandlehome,
                     "tarefa7",
                     10000,
+                    NULL,
+                    1,
                     &VoidWifi_HandleHome,
                     0)                                   
 void loop() {
