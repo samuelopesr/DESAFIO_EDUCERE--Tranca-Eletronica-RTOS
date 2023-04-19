@@ -1,10 +1,10 @@
 #include <Stepper.h>
 
 //define de pinos do motor
-#define motor_pin_1  23
-#define motor_pin_2  21
-#define motor_pin_3  22
-#define motor_pin_4  19
+#define motor_pin_1  13
+#define motor_pin_2  26
+#define motor_pin_3  14
+#define motor_pin_4  25
 
 //passos por revolução
 long int Pos = 2048;
