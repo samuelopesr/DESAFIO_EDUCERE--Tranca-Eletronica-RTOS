@@ -105,10 +105,10 @@ void handlemenu() {
     html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box;  font-family: Arial, Helvetica, sans-serif;}";
     html += "body, html{background: linear-gradient(45deg, rgb(4, 23, 39), rgb(37, 51, 112)); height: 100vh; width: 100vw;}";
     html += "h1{color: white; position: absolute; width: 270px; margin-top: 45%; margin-left: 22%;}";
-    html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 700px; width: 700px; border-radius: 50%; border: none;}</style>";
+    html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 400px; width: 400px; border-radius: 50%; border: none;}</style>";
     html += "<body><center><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
-    html += "<button name='button' value='1'>Abrir Portão</button>";
+    html += "<button name='button' value='0'>Abrir Portão</button>";
     html += "</form></center></body></html>";
   } 
   else if (BValor) 
@@ -116,10 +116,10 @@ void handlemenu() {
     html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box;  font-family: Arial, Helvetica, sans-serif;}";
     html += "body, html {background: linear-gradient(45deg, rgb(4, 23, 39), rgb(37, 51, 112)); height: 100vh; width: 100vw;}";
     html += "h1{color: white; position: absolute; width: 270px; margin-top: 45%; margin-left: 22%;}";
-    html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 700px; width: 700px; border-radius: 50%; border: none;}</style>";
+    html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 200px; width: 200px; border-radius: 50%; border: none;}</style>";
     html += "<body><center><h1>Controle do Motor</h1>";
     html += "<form method='GET'>";
-    html += "<button name='button' value='0'>Fechar Portão</button>";
+    html += "<button name='button' value='1'>Fechar Portão</button>";
     html += "</form></center></body></html>";
   }
 
