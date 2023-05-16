@@ -39,7 +39,6 @@ void motor(void * pvParameters)
         MOTOR.step(-Pos);
         delay(1);
       }
-      
     }
     else if(!digitalRead(conexao_0))
     {
