@@ -37,12 +37,11 @@ void wifi(void* pvParameters)
   WiFi.begin(ssid, senha);
 
   //set ip fixo
-  /*
-  IPAddress local_IP(192, 168, 0, 184);
-  IPAddress gateway(192, 168, 0, 1);
-  IPAddress subnet(255, 255, 25, 0);
-  IPAddress primaryDNS(192, 168, 0, 1);
-  IPAddress secondaryDNS(0, 0, 0, 0);
+  IPAddress local_IP(192, 168, 10, 166);
+  IPAddress gateway(192,168,10,1);
+  IPAddress subnet(255, 255, 225, 0);
+  IPAddress primaryDNS(208,67,222,222);
+  IPAddress secondaryDNS(208,67,220,220);
 
 
 
@@ -51,7 +50,7 @@ void wifi(void* pvParameters)
   {
     Serial.println("STA FALHOU");
   }
-  */
+  
 
   //check conexao
   while (WiFi.status() != WL_CONNECTED) 
@@ -99,14 +98,13 @@ void handlemenu() {
   }
 
 
-  html = "<html><head><title>ESP32 Online!!</title></head>";
+  html = "<html><head><title>ESP32 Online!!</title><meta charset=\"UTF-8\"></head>";
   if (!BValor) 
   {
     html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box;  font-family: Arial, Helvetica, sans-serif;}";
     html += "body, html{background: linear-gradient(45deg, rgb(4, 23, 39), rgb(37, 51, 112)); height: 100vh; width: 100vw;}";
-    html += "h1{color: white; position: absolute; width: 270px; margin-top: 45%; margin-left: 22%;}";
     html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 400px; width: 400px; border-radius: 50%; border: none;}</style>";
-    html += "<body><center><h1>Controle do Motor</h1>";
+    html += "<body><center>";
     html += "<form method='GET'>";
     html += "<button name='button' value='0'>Abrir Portão</button>";
     html += "</form></center></body></html>";
@@ -115,9 +113,8 @@ void handlemenu() {
   {
     html += "<style>*{margin: 0px; padding: 0px; box-sizing: border-box;  font-family: Arial, Helvetica, sans-serif;}";
     html += "body, html {background: linear-gradient(45deg, rgb(4, 23, 39), rgb(37, 51, 112)); height: 100vh; width: 100vw;}";
-    html += "h1{color: white; position: absolute; width: 270px; margin-top: 45%; margin-left: 22%;}";
-    html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 200px; width: 200px; border-radius: 50%; border: none;}</style>";
-    html += "<body><center><h1>Controle do Motor</h1>";
+    html += "form > button{font-size: 1.9em; background-color: rgb(154, 191, 212); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 400px; width: 400px; border-radius: 50%; border: none;}</style>";
+    html += "<body><center>";
     html += "<form method='GET'>";
     html += "<button name='button' value='1'>Fechar Portão</button>";
     html += "</form></center></body></html>";
@@ -126,10 +123,9 @@ void handlemenu() {
   //manda informação para o servidor web
   Servidor.send(200, "text/html", html);
 }
-
 void handlehome() 
 {
-  String html = "<html><head><title>ESP32 Online!!</title></head><body><a href='./Chave'>MENU</a></body></html>";
+  String html = "<html><head><title>ESP32 Online!!</title><meta charset=\"UTF-8\"></head><body><a href='./Chave'>MENU</a></body></html>";
 
   //manda informação para o servidor web
   Servidor.send(200, "text/html", html);
